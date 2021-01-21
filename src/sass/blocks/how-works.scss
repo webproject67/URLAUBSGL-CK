@@ -1,0 +1,136 @@
+.how-works {
+  padding: 18px 0;
+}
+
+.how-works__title {
+  font-family: Montserrat;
+  color: #333333;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.how-works__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-works__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 300px;
+  height: 240px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border-radius: 4px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.how-works__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.how-works__btns {
+  display: none;
+}
+
+.how-works__link {
+  display: inline-block;
+  width: 70px;
+  padding: 4px 0;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ff4e50;
+  border-radius: 50px;
+}
+
+.how-works__subtitle {
+  margin: 20px 0 0;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.how-works__text {
+  margin-bottom: 18px;
+  color: #cccccc;
+  font-size: 14px;
+}
+@media (min-width: $tablet-width) {
+  .how-works {
+    padding: 79px 10px;
+  }
+
+  .how-works__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 748px;
+    margin: 35px auto 0;
+  }
+
+  .how-works__item {
+    width: 236px;
+    height: 398px;
+    padding: 0 18px;
+  }
+
+  .how-works__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 116px;
+    
+    &--middle {
+      margin: 0 -8px 160px;
+    }
+  }
+
+  .how-works__btn {
+    width: 30px;
+    height: 60px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .how-works__arrow {
+    width: 30px;
+    height: 54px;
+
+    &--left {
+      transform: rotate(180deg);
+    }
+  }
+
+  .how-works__text {
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-works__list {
+    width: 940px;
+  }
+
+  .how-works__item {
+    width: 300px;
+    height: 397px;
+  }
+
+  .how-works__btns {
+    margin-bottom: 15px;
+
+    &--middle {
+      margin: 0 3px 43px;
+    }
+  }
+}
