@@ -1,0 +1,69 @@
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/desktop/Vector_Smart_Object@1x.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+.page-header__wrapper {
+	min-width: 280px;
+	margin: 0 auto;
+  padding: 20px 0 138px;
+  text-align: center;
+}
+
+.page-header__title {
+  width: 95%;
+  margin: 13px auto;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-header__text {
+  width: 72%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.page-header__link {
+  display: inline-block;
+  width: 280px;
+  margin-top: 17px;
+  padding: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #ff4e50;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    padding: 40px 46px 234px;
+  }
+
+  .page-header__title {
+    width: 75%;
+    margin: 143px auto 28px;
+    font-size: 52px;
+  }
+
+  .page-header__text {
+    font-size: 24px;
+  }
+  .page-header__link {
+    width: 224px;
+    margin-top: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    max-width: 960px;
+    padding: 40px 10px 234px;
+  }
+
+  .page-header__title {
+    width: 64%;
+  }
+}
