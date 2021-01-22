@@ -1,4 +1,5 @@
 .partner {
+  padding-bottom: 17px;
   text-align: center;
 }
 .partner__title {
@@ -181,6 +182,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .partner {
+    padding-bottom: 77px;
+  }
+
   .partner__title {
     font-size: 21px;
   }
