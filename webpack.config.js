@@ -75,6 +75,22 @@ module.exports = {
       {
         from: path.resolve(__dirname, 'src/favicon/favicon.ico'),
         to: path.resolve(__dirname, 'public/[name].[ext]')
+      },
+      {
+        from: path.resolve(__dirname, 'src/img/svg/Shape128.svg'),
+        to: path.resolve(__dirname, 'public/img/svg/Shape128.svg')
+      },
+      {
+        from: path.resolve(__dirname, 'src/img/svg/Shape153.svg'),
+        to: path.resolve(__dirname, 'public/img/svg/Shape153.svg')
+      },
+      {
+        from: path.resolve(__dirname, 'src/img/svg/Shape155.svg'),
+        to: path.resolve(__dirname, 'public/img/svg/Shape155.svg')
+      },
+      {
+        from: path.resolve(__dirname, 'src/img/svg/Shape170.svg'),
+        to: path.resolve(__dirname, 'public/img/svg/Shape170.svg')
       }
     ]),
     new ImageminPlugin({ 
