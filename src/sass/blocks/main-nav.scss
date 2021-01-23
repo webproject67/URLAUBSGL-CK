@@ -28,6 +28,15 @@
   border-radius: 50px;
 }
 
+.main-nav__item {
+  opacity: 1;
+  transition: all 0.4s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
 .main-nav__link {
   font-family: Montserrat;
   font-size: 14px;

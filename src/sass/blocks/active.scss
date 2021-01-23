@@ -21,6 +21,10 @@
 .active__item {
   position: relative;
   margin-bottom: 4px;
+
+  &:hover .active__text {
+    opacity: 0;
+  }
 }
 
 .active__text {
@@ -35,6 +39,8 @@
   font-family: Montserrat;
   font-weight: 700;
   transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: all 0.4s ease;
 }
 
 .active__subtitle {
@@ -68,9 +74,15 @@
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
-  border: none;
+  border: 2px solid #ff4e50;
   border-radius: 20px;
   background-color: #ff4e50;
+  transition: all 0.4s ease;
+
+    &:hover {
+      color: #ff4e50;
+      background-color: #ffffff;
+    }
 }
 
 @media (min-width: $tablet-width) {

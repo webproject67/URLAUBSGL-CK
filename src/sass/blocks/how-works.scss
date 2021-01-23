@@ -52,6 +52,11 @@
   letter-spacing: 2px;
   background-color: #ff4e50;
   border-radius: 50px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #e94043;
+  }
 }
 
 .how-works__subtitle {
@@ -105,9 +110,16 @@
   .how-works__arrow {
     width: 30px;
     height: 54px;
+    fill: #ffffff;
+    opacity: 0.5;
+    transition: all 0.4s ease;
 
     &--left {
       transform: rotate(180deg);
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 

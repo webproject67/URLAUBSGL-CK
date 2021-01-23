@@ -1,6 +1,12 @@
 .page-header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/desktop/Vector_Smart_Object@1x.jpg") no-repeat center top;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/desktop/Vector_Smart_Object@2x.jpg");
+    background-position: center top;
+    background-repeat:  no-repeat;
+  }
 }
 
 .page-header__wrapper {
@@ -35,6 +41,11 @@
   font-weight: 700;
   border-radius: 20px;
   background-color: #ff4e50;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #e94043;
+  }
 }
 
 @media (min-width: $tablet-width) {

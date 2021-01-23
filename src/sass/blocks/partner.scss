@@ -18,6 +18,14 @@
 }
 
 .partner__item {
+
+  &:hover .partner__img{
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px #727272;
+  }
+}
+
+.partner__item {
   margin-bottom: 27px;
 
   &:first-child {
@@ -121,6 +129,11 @@
   }
 }
 
+.partner__img{
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
 .partner__author {
   position: relative;
   width: 120px;
@@ -179,6 +192,12 @@
   font-weight: 700;
   border-radius: 20px;
   border: 2px solid #ff4e50;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #ff4e50;
+  }
 }
 
 @media (min-width: $tablet-width) {
