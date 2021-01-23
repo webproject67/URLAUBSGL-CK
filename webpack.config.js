@@ -113,7 +113,15 @@ module.exports = {
           extract: true,
           spriteFilename: 'img/svg/sprite.svg'
         }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: `babel-loader`,
+        }
       }
     ]
-  }
+  },
+  devtool: `source-map`
 }

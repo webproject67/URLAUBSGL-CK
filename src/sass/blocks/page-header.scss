@@ -3,9 +3,8 @@
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("/img/desktop/Vector_Smart_Object@2x.jpg");
-    background-position: center top;
-    background-repeat:  no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/desktop/Vector_Smart_Object@2x.jpg") no-repeat center top;
+    background-size: cover;
   }
 }
 

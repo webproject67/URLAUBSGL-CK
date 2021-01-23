@@ -1,0 +1,811 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App 1`] = `
+Array [
+  <header
+    className="page-header"
+  >
+    <div
+      className="page-header__wrapper"
+    >
+      <nav
+        className="main-nav"
+      >
+        <p
+          className="main-nav__logo"
+        >
+          URLAUBSGLÜCK
+        </p>
+        <ul
+          className="main-nav__list"
+        >
+          <li
+            className="main-nav__item"
+          >
+            <a
+              className="main-nav__link"
+              href="#"
+            >
+              Log in
+            </a>
+          </li>
+          <li
+            className="main-nav__item"
+          >
+            <a
+              className="main-nav__link"
+              href="#"
+            >
+              Sign up
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1
+        className="page-header__title"
+      >
+        Share your holiday dreams
+      </h1>
+      <p
+        className="page-header__text"
+      >
+        And find the perfect partner to fullfill it
+      </p>
+      <a
+        className="page-header__link"
+        href="#"
+      >
+        Find your holiday partner
+      </a>
+    </div>
+  </header>,
+  <main
+    className="page-main"
+  >
+    <section
+      className="how-works"
+    >
+      <h2
+        className="how-works__title"
+      >
+        How Urlaubsglück works?
+      </h2>
+      <div
+        className="how-works__list"
+      >
+        <div
+          className="how-works__item"
+        >
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcSet="img/desktop/Layer_2@1x.jpg 1x, img/desktop/Layer_2@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcSet="img/tablet/Layer_2@1x.jpg 1x, img/tablet/Layer_2@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcSet="img/mobile/Layer_2@1x.jpg 1x, img/mobile/Layer_2@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              alt="photo"
+              className="how-works__img"
+              src="img/desktop/Layer_2@1x.jpg"
+              srcSet="img/desktop/Layer_2@2x.jpg 2x"
+            />
+          </picture>
+          <div
+            className="how-works__btns"
+          >
+            <button
+              className="how-works__btn"
+            >
+              <svg
+                className="how-works__arrow how-works__arrow--left"
+              >
+                <use
+                  xlinkHref="img/svg/sprite.svg#arrow"
+                />
+              </svg>
+            </button>
+            <button
+              className="how-works__btn"
+            >
+              <svg
+                className="how-works__arrow how-works__arrow--right"
+              >
+                <use
+                  xlinkHref="img/svg/sprite.svg#arrow"
+                />
+              </svg>
+            </button>
+          </div>
+          <a
+            className="how-works__link"
+            href="#"
+          >
+            step 1
+          </a>
+          <h3
+            className="how-works__subtitle"
+          >
+            Sed leo enim, 
+            <br />
+             condimentum
+          </h3>
+          <p
+            className="how-works__text"
+          >
+            Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+          </p>
+        </div>
+        <div
+          className="how-works__item"
+        >
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcSet="img/desktop/Layer_3@1x.jpg 1x, img/desktop/Layer_3@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcSet="img/tablet/Layer_3@1x.jpg 1x, img/tablet/Layer_3@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcSet="img/mobile/Layer_3@1x.jpg 1x, img/mobile/Layer_3@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              alt="photo"
+              className="how-works__img"
+              src="img/desktop/Layer_3@1x.jpg"
+              srcSet="img/desktop/Layer_3@2x.jpg 2x"
+            />
+          </picture>
+          <div
+            className="how-works__btns how-works__btns--middle"
+          >
+            <button
+              className="how-works__btn"
+            >
+              <svg
+                className="how-works__arrow how-works__arrow--left"
+              >
+                <use
+                  xlinkHref="img/svg/sprite.svg#arrow"
+                />
+              </svg>
+            </button>
+            <button
+              className="how-works__btn"
+            >
+              <svg
+                className="how-works__arrow how-works__arrow--right"
+              >
+                <use
+                  xlinkHref="img/svg/sprite.svg#arrow"
+                />
+              </svg>
+            </button>
+          </div>
+          <a
+            className="how-works__link"
+            href="#"
+          >
+            step 2
+          </a>
+          <h3
+            className="how-works__subtitle"
+          >
+            Morbi velit risus
+          </h3>
+          <p
+            className="how-works__text"
+          >
+            Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+          </p>
+        </div>
+        <div
+          className="how-works__item"
+        >
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcSet="img/desktop/Layer_4@1x.jpg 1x, img/desktop/Layer_4@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcSet="img/tablet/Layer_4@1x.jpg 1x, img/tablet/Layer_4@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcSet="img/mobile/Layer_4@1x.jpg 1x, img/mobile/Layer_4@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              alt="photo"
+              className="how-works__img"
+              src="img/desktop/Layer_4@1x.jpg"
+              srcSet="img/desktop/Layer_4@2x.jpg 2x"
+            />
+          </picture>
+          <div
+            className="how-works__btns"
+          >
+            <button
+              aria-label="switch"
+              className="how-works__btn"
+            >
+              <svg
+                className="how-works__arrow how-works__arrow--left"
+              >
+                <use
+                  xlinkHref="img/svg/sprite.svg#arrow"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="switch"
+              className="how-works__btn"
+            >
+              <svg
+                className="how-works__arrow how-works__arrow--right"
+              >
+                <use
+                  xlinkHref="img/svg/sprite.svg#arrow"
+                />
+              </svg>
+            </button>
+          </div>
+          <a
+            className="how-works__link"
+            href="#"
+          >
+            step 3
+          </a>
+          <h3
+            className="how-works__subtitle"
+          >
+            Sed leo enim, 
+            <br />
+             condimentum
+          </h3>
+          <p
+            className="how-works__text"
+          >
+            Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className="partner"
+    >
+      <h2
+        className="partner__title"
+      >
+        Meet a partner for your best holiday
+      </h2>
+      <ul
+        className="partner__list"
+      >
+        <li
+          className="partner__item"
+        >
+          <a
+            className="partner__link"
+            href="#"
+          >
+            <img
+              alt="photo"
+              className="partner__img"
+              src="img/mobile/Layer_6@1x.jpg"
+              srcSet="img/mobile/Layer_6@2x.jpg 2x"
+            />
+            <p
+              className="partner__author"
+            >
+              Bradley Hunter
+            </p>
+            <div
+              className="partner__before"
+            />
+            <p
+              className="partner__text"
+            >
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
+          </a>
+        </li>
+        <li
+          className="partner__item"
+        >
+          <a
+            className="partner__link"
+            href="#"
+          >
+            <img
+              alt="photo"
+              className="partner__img"
+              src="img/mobile/Layer_8@1x.jpg"
+              srcSet="img/mobile/Layer_8@2x.jpg 2x"
+            />
+            <p
+              className="partner__author"
+            >
+              Lucas Marsha
+            </p>
+            <div
+              className="partner__before"
+            />
+            <p
+              className="partner__text"
+            >
+              I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.
+            </p>
+          </a>
+        </li>
+        <li
+          className="partner__item"
+        >
+          <a
+            className="partner__link"
+            href="#"
+          >
+            <img
+              alt="photo"
+              className="partner__img"
+              src="img/mobile/Layer_7@1x.jpg"
+              srcSet="img/mobile/Layer_7@2x.jpg 2x"
+            />
+            <p
+              className="partner__author"
+            >
+              Heather Walker
+            </p>
+            <div
+              className="partner__before"
+            />
+            <p
+              className="partner__text"
+            >
+              I'm a happy person that loves cats and climbing on mountains.
+            </p>
+          </a>
+        </li>
+        <li
+          className="partner__item"
+        >
+          <a
+            className="partner__link"
+            href="#"
+          >
+            <img
+              alt="photo"
+              className="partner__img"
+              src="img/mobile/Layer_9@1x.jpg"
+              srcSet="img/mobile/Layer_9@2x.jpg 2x"
+            />
+            <p
+              className="partner__author"
+            >
+              Bradley Hunter
+            </p>
+            <div
+              className="partner__before"
+            />
+            <p
+              className="partner__text"
+            >
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
+          </a>
+        </li>
+      </ul>
+      <a
+        className="partner__btn"
+        href="#"
+      >
+        See other partners
+      </a>
+    </section>
+    <section
+      className="active"
+    >
+      <h2
+        className="active__title"
+      >
+        Discover holiday activity ideas
+      </h2>
+      <ul
+        className="active__list"
+      >
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_10@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_10@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_10@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_10@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Sport and Activity
+            </p>
+          </a>
+        </li>
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_11@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_11@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_11@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_11@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Wellnes and Health
+            </p>
+          </a>
+        </li>
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_12@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_12@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_12@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_12@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Extreme Sports and Expeditions
+            </p>
+          </a>
+        </li>
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_13@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_13@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_13@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_13@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Games
+            </p>
+          </a>
+        </li>
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_14@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_14@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_14@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_14@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Culture and Education
+            </p>
+          </a>
+        </li>
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_15@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_15@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_15@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_15@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Relaxation
+            </p>
+          </a>
+        </li>
+        <li
+          className="active__item"
+        >
+          <a
+            className="active__link"
+            href="#"
+          >
+            <picture
+              className=""
+            >
+              <source
+                media="(min-width: 960px)"
+                srcSet="img/desktop/Layer_16@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet="img/tablet/Layer_16@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcSet="img/mobile/Layer_16@1x.jpg 1x"
+                type="image/jpg"
+              />
+              <img
+                alt="photo"
+                className=""
+                src="img/desktop/Layer_16@1x.jpg"
+                srcSet=""
+              />
+            </picture>
+            <p
+              className="active__text"
+            >
+              Travelling
+            </p>
+          </a>
+        </li>
+      </ul>
+      <h2
+        className="active__subtitle"
+      >
+        Discover holiday activity ideas
+      </h2>
+      <p
+        className="active__text2"
+      >
+        Hi! What are your holiday interests?
+      </p>
+      <form
+        className="active__form"
+      >
+        <input
+          className="active__text3"
+          placeholder="Enter your interests"
+          type="text"
+        />
+        <input
+          className="active__button"
+          type="button"
+          value="Search partners"
+        />
+      </form>
+    </section>
+    <div
+      className="page-main__br"
+    />
+  </main>,
+  <footer
+    className="page-footer"
+  >
+    <ul
+      className="page-footer__list"
+    >
+      <li
+        className="page-footer__item"
+      >
+        URLAUBSGLÜCK
+      </li>
+      <li
+        className="page-footer__item"
+      >
+        Company
+        <ul
+          className="page-footer__list2"
+        >
+          <li
+            className="page-footer__item2"
+          >
+            <a
+              href="#"
+            >
+              About
+            </a>
+          </li>
+          <li
+            className="page-footer__item2"
+          >
+            <a
+              href="#"
+            >
+              Contacts
+            </a>
+          </li>
+          <li
+            className="page-footer__item2"
+          >
+            <a
+              href="#"
+            >
+              Press
+            </a>
+          </li>
+          <li
+            className="page-footer__item2"
+          >
+            <a
+              href="#"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        className="page-footer__item"
+      >
+        Partners
+      </li>
+      <li
+        className="page-footer__item"
+      >
+        Designed by
+        <img
+          alt="Logo"
+          className="page-footer__img"
+          src="img/mobile/Vector_Smart_Object@1x.jpg"
+          srcSet="img/mobile/Vector_Smart_Object@2x.jpg 2x"
+        />
+      </li>
+    </ul>
+  </footer>,
+]
+`;
