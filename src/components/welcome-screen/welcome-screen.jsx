@@ -1,6 +1,4 @@
 import React, {Fragment, PureComponent} from "react";
-import Picture from 'react-picture-webp';
-import {Layer_10, Layer_11, Layer_12, Layer_13, Layer_14, Layer_15, Layer_16} from '../../const';
 import Slider from "react-slick";
 import {slider1, slider2, slider3} from "../slider-screen/slider-screen.jsx";
 import {Link} from "react-scroll";
@@ -19,12 +17,19 @@ class WelcomeScreen extends PureComponent {
   constructor() {
     super();
     this.state = {
-      transform: 1
+      transform: 1,
+      apiKey: '20013916-cbd06c727440e873a986e92b6',
+      images: [],
+      tags: [`sport`, `Activity`, `Wellnes`, `Health`, `Extreme Sports`, `Expeditions`, `games`, `Culture`, `Education`, 'Relaxation', `Travelling`]
     }
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
+
+    const tag = this.state.tags[Math.floor(Math.random() * this.state.tags.length)]; 
+    document.querySelector(`.active__text3`).value = tag;
+    this.onButtonSubmit();
   }
 
   componentWillUnmount() {
@@ -37,6 +42,24 @@ class WelcomeScreen extends PureComponent {
 
     this.setState({
       transform: itemTranslate
+    });
+  }
+
+  async onButtonSubmit(evt) {
+    let text;
+
+    if (evt === undefined) {
+      text = document.querySelector(`.active__text3`).value;
+    } else {
+      evt.preventDefault();
+      text = evt.target.querySelector(`.active__text3`).value;
+    }
+
+    const URL = await fetch(`https://pixabay.com/api/?key=${this.state.apiKey}&q=${text}&per_page=7&min_width=300&orientation=horizontal`);
+    const data = await URL.json();
+    document.querySelector(`.active__text3`).value = ``;
+    this.setState({
+        images: data.hits
     });
   }
 
@@ -123,54 +146,23 @@ class WelcomeScreen extends PureComponent {
           <section className="active">
             <h2 className="active__title">Discover holiday activity ideas</h2>
             <ul className="active__list">
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_10} />
-                  <p className="active__text">Sport and Activity</p>
-                </a>
-              </li>
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_11} />
-                  <p className="active__text">Wellnes and Health</p>
-                </a>
-              </li>
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_12} />
-                  <p className="active__text">Extreme Sports and Expeditions</p>
-                </a>
-              </li>
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_13} />
-                  <p className="active__text">Games</p>
-                </a>
-              </li>
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_14} />
-                  <p className="active__text">Culture and Education</p>
-                </a>
-              </li>
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_15} />
-                  <p className="active__text">Relaxation</p>
-                </a>
-              </li>
-              <li className="active__item">
-                <a className="active__link" href="#">
-                  <Picture {...Layer_16} />
-                  <p className="active__text">Travelling</p>
-                </a>
-              </li>
+              {this.state.images.map((elem, i) => (
+                <li key={i} className="active__item">
+                  <a className="active__link" href={elem.largeImageURL} target="_blank">
+                    <div className="active__img"
+                     style={{background: `url(${elem.largeImageURL})`}}
+                    >
+                    </div>
+                    <p className="active__text">{elem.tags}</p>
+                  </a>
+                </li>
+              ))}
             </ul>
             <h2 className="active__subtitle">Discover holiday activity ideas</h2>
             <p className="active__text2">Hi! What are your holiday interests?</p>
-            <form className="active__form">
+            <form onSubmit={this.onButtonSubmit.bind(this)} className="active__form">
               <input className="active__text3" type="text" placeholder="Enter your interests"/>
-              <input className="active__button" type="button" value="Search partners"/>
+              <input className="active__button" type="submit" value="Search partners"/>
             </form>
           </section>
           <div className="page-main__br"></div>
