@@ -2,29 +2,19 @@ import React from "react";
 import Picture from 'react-picture-webp';
 import {Layer_2, Layer_3, Layer_4} from '../../const';
 
-export const slider1 = () => (
-  <div className="how-works__item">
-    <Picture {...Layer_2} />
-    <a className="how-works__link" href="#">step 1</a>
-    <h3 className="how-works__subtitle">Sed leo enim, <br/> condimentum</h3>
-    <p className="how-works__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-  </div>
-)
+const imgs = [<Picture {...Layer_2 }/>, <Picture {...Layer_3 }/>, <Picture {...Layer_4 }/>]
+const subtitles = [`Sed leo enim, condimentum`, `Morbi velit risus`, `Sed leo enim, condimentum`];
+const texts = [`Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.`, `Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.`, `Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.`];
 
-export const slider2 = () => (
-  <div className="how-works__item">
-    <Picture {...Layer_3} />
-    <a className="how-works__link" href="#">step 2</a>
-    <h3 className="how-works__subtitle">Morbi velit risus</h3>
-    <p className="how-works__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-  </div>
-)
+export default (props) => {
+  const {num} = props;
 
-export const slider3 = () => (
-  <div className="how-works__item">
-    <Picture {...Layer_4} />
-    <a className="how-works__link" href="#">step 3</a>
-    <h3 className="how-works__subtitle">Sed leo enim, <br/> condimentum</h3>
-    <p className="how-works__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-  </div>
-)
+  return (
+    <div className="how-works__item">
+      {imgs[num - 2]}
+      <a className="how-works__link" href="#">{`step ${num - 1}`}</a>
+      <h3 className="how-works__subtitle">{subtitles[num - 2]}</h3>
+      <p className="how-works__text">{texts[num - 2]}</p>
+    </div>
+  )
+} 

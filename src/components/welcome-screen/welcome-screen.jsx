@@ -1,6 +1,6 @@
 import React, {Fragment, PureComponent} from "react";
 import Slider from "react-slick";
-import {slider1, slider2, slider3} from "../slider-screen/slider-screen.jsx";
+import SliderScreen from "../slider-screen/slider-screen.jsx";
 import {Link} from "react-scroll";
 
 const settings = {
@@ -89,19 +89,19 @@ class WelcomeScreen extends PureComponent {
             <h2 className="how-works__title">How Urlaubsglück works?</h2>
             <div className="how-works__list">
             <Slider {...settings}>
-              {slider1()}
-              {slider2()}
-              {slider3()}
+              <SliderScreen num={2}/>
+              <SliderScreen num={3}/>
+              <SliderScreen num={4}/>
             </Slider>
             <Slider {...settings}>
-              {slider2()}
-              {slider3()}
-              {slider1()}
+              <SliderScreen num={3}/>
+              <SliderScreen num={4}/>
+              <SliderScreen num={2}/>
             </Slider>
             <Slider {...settings}>
-              {slider3()}
-              {slider1()}
-              {slider2()}
+              <SliderScreen num={4}/>
+              <SliderScreen num={2}/>
+              <SliderScreen num={3}/>
             </Slider>
             </div>
           </section>
