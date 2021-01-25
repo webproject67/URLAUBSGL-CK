@@ -52,7 +52,10 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-picture-webp": "^1.1.9",
+    "react-scroll": "^1.8.1",
+    "react-slick": "^0.27.14",
     "react-test-renderer": "^16.12.0",
+    "slick-carousel": "^1.8.1",
     "svg-sprite-loader": "^4.2.2"
   },
   "browserslist": [

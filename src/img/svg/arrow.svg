@@ -28,6 +28,13 @@
                            
 <?xpacket end="w"?></metadata>
 <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
   </defs>
   <path id="Forma_1_copy" data-name="Forma 1 copy" class="cls-1" d="M500.481,1062.99L529,1035.5l-28.515-27.49L499,1009.52l26.946,25.98L499,1061.48Z" transform="translate(-499 -1008)"/>
 </svg>

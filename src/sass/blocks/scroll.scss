@@ -1,0 +1,11 @@
+.scroll {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.scroll--top {
+  fill: #000000;
+}

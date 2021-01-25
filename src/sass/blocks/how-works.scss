@@ -18,7 +18,7 @@
 
 .how-works__item {
   position: relative;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: flex-end;
   width: 300px;
@@ -34,10 +34,6 @@
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-.how-works__btns {
-  display: none;
 }
 
 .how-works__link {
@@ -89,40 +85,6 @@
     padding: 0 18px;
   }
 
-  .how-works__btns {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 116px;
-    
-    &--middle {
-      margin: 0 -8px 160px;
-    }
-  }
-
-  .how-works__btn {
-    width: 30px;
-    height: 60px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-  }
-
-  .how-works__arrow {
-    width: 30px;
-    height: 54px;
-    fill: #ffffff;
-    opacity: 0.5;
-    transition: all 0.4s ease;
-
-    &--left {
-      transform: rotate(180deg);
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
   .how-works__text {
     margin-bottom: 14px;
   }
@@ -136,13 +98,5 @@
   .how-works__item {
     width: 300px;
     height: 397px;
-  }
-
-  .how-works__btns {
-    margin-bottom: 15px;
-
-    &--middle {
-      margin: 0 3px 43px;
-    }
   }
 }
