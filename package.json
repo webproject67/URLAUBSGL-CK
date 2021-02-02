@@ -8,7 +8,9 @@
     "dev:watch": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
-    "jest": "jest"
+    "eslint": "eslint --ext .jsx --ext .js src/",
+    "test": "npm run eslint && npm run test.jest",
+    "test.jest": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",

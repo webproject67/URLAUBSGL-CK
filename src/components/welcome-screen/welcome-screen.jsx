@@ -129,7 +129,7 @@ class WelcomeScreen extends PureComponent {
                   <img className="partner__img" src="img/mobile/Layer_7@1x.jpg" srcSet="img/mobile/Layer_7@2x.jpg 2x" alt="photo"/>
                   <p className="partner__author">Heather Walker</p>
                   <div className="partner__before"></div>
-                  <p className="partner__text">I'm a happy person that loves cats and climbing on mountains.</p>
+                  <p className="partner__text">I`m a happy person that loves cats and climbing on mountains.</p>
                 </a>
               </li>
               <li className="partner__item">
@@ -148,7 +148,7 @@ class WelcomeScreen extends PureComponent {
             <ul className="active__list">
               {this.state.images.map((elem, i) => (
                 <li key={i} className="active__item">
-                  <a className="active__link" href={elem.largeImageURL} target="_blank">
+                  <a className="active__link" href={elem.largeImageURL} target="_blank" rel="noopener noreferrer">
                     <div className="active__img"
                      style={{background: `url(${elem.largeImageURL})`}}
                     >
