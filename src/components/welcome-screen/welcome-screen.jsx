@@ -20,7 +20,7 @@ class WelcomeScreen extends PureComponent {
       transform: 1,
       apiKey: '20013916-cbd06c727440e873a986e92b6',
       images: [],
-      tags: [`sport`, `Activity`, `Wellnes`, `Health`, `Extreme Sports`, `Expeditions`, `games`, `Culture`, `Education`, 'Relaxation', `Travelling`]
+      tags: ["sport", "Activity", "Wellnes", "Health", "Extreme Sports", "Expeditions", "games", "Culture", "Education", 'Relaxation', "Travelling"]
     }
   }
 
@@ -28,7 +28,7 @@ class WelcomeScreen extends PureComponent {
     window.addEventListener('scroll', this.handleScroll.bind(this));
 
     const tag = this.state.tags[Math.floor(Math.random() * this.state.tags.length)]; 
-    document.querySelector(`.active__text3`).value = tag;
+    document.querySelector(".active__text3").value = tag;
     this.onButtonSubmit();
   }
 
@@ -49,15 +49,15 @@ class WelcomeScreen extends PureComponent {
     let text;
 
     if (evt === undefined) {
-      text = document.querySelector(`.active__text3`).value;
+      text = document.querySelector(".active__text3").value;
     } else {
       evt.preventDefault();
-      text = evt.target.querySelector(`.active__text3`).value;
+      text = evt.target.querySelector(".active__text3").value;
     }
 
     const URL = await fetch(`https://pixabay.com/api/?key=${this.state.apiKey}&q=${text}&per_page=7&min_width=300&orientation=horizontal`);
     const data = await URL.json();
-    document.querySelector(`.active__text3`).value = ``;
+    document.querySelector(".active__text3").value = "";
     this.setState({
         images: data.hits
     });

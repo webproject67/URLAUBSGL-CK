@@ -48,7 +48,7 @@
       &::before {
         bottom: 35px;
         right: 85px;
-        background: url("/img/svg/Shape128.svg") no-repeat;
+        background: url('/img/svg/Shape128.svg') no-repeat;
       }
     }
   }
@@ -73,7 +73,7 @@
       &::before {
         bottom: 35px;
         right: 82px;
-        background: url("/img/svg/Shape155.svg") no-repeat;
+        background: url('/img/svg/Shape155.svg') no-repeat;
       }
     }
   }
@@ -98,7 +98,7 @@
       &::before {
         bottom: 32px;
         right: 87px;
-        background: url("/img/svg/Shape153.svg") no-repeat;
+        background: url('/img/svg/Shape153.svg') no-repeat;
       }
     }
   }
@@ -123,7 +123,7 @@
       &::before {
         bottom: 28px;
         right: 88px;
-        background: url("/img/svg/Shape170.svg") no-repeat;
+        background: url('/img/svg/Shape170.svg') no-repeat;
       }
     }
   }
@@ -145,7 +145,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 39px;
     height: 39px;
     border-radius: 50%;
@@ -154,7 +154,7 @@
   
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 33px;
     height: 33px;
     border-radius: 50%;
@@ -168,7 +168,7 @@
   
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 39px;
     height: 39px;
   }

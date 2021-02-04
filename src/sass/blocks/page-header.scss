@@ -1,9 +1,9 @@
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/desktop/Vector_Smart_Object@1x.jpg") no-repeat center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/desktop/Vector_Smart_Object@1x.jpg') no-repeat center top;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/desktop/Vector_Smart_Object@2x.jpg") no-repeat center top;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/desktop/Vector_Smart_Object@2x.jpg') no-repeat center top;
     background-size: cover;
   }
 }
